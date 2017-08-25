@@ -2,4 +2,20 @@
     ViewData["Title"] = "Projects";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: '@Url.Action("GetStarredRepos", "Projects")',
+            type: "GET",
+            success: function (result) {
+                $('#result').html(result);
+            }
+        })
+    });
+</script>
+
 <h2>Projects</h2>
+
+<div id="result">
+    
+</div>

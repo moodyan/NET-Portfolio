@@ -3,6 +3,7 @@ using Newtonsoft.Json.Linq;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,7 +12,6 @@ namespace Portfolio.Models
     public class Project
     {
         public int id { get; set; }
-        public Owner owner { get; set; }
         public string name { get; set; }
         public string full_name { get; set; }
         public string description { get; set; }
@@ -75,32 +75,33 @@ namespace Portfolio.Models
         public string pushed_at { get; set; }
         public string created_at { get; set; }
         public string updated_at { get; set; }
-    }
 
-    public static List<Project> GetStarredRepos(int amount)
-    {
-        RestClient client = new RestClient("https://api.github.com");
-        RestRequest request = new RestRequest($"/search/repositories?q=user:moodyan&sort=stars&per_page={amount}", Method.GET);
-        request.AddHeader("User-Agent", "moodyan");
-        RestResponse response = new RestResponse();
-
-        Task.Run(async () =>
+        public static List<Project> GetStarredRepos(int amount)
         {
-            response = await GetResponseContentAsync(client, request) as RestResponse;
-        }).Wait();
+            RestClient client = new RestClient("https://api.github.com");
+            RestRequest request = new RestRequest($"/search/repositories?q=user:moodyan&sort=stars&per_page={amount}", Method.GET);
+            request.AddHeader("User-Agent", "moodyan");
+            RestResponse response = new RestResponse();
 
-        JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
-        List<Project> project = JsonConvert.DeserializeObject<List<Project>>(jsonResponse["items"].ToString());
+            Task.Run(async () =>
+            {
+                response = await GetResponseContentAsync(client, request) as RestResponse;
+            }).Wait();
+            JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
+            List<Project> project = JsonConvert.DeserializeObject<List<Project>>(jsonResponse["items"].ToString());
+            Debug.WriteLine(project);
 
-        return project;
-    }
+            return project;
+        }
 
-    public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
-    {
-        var tcs = new TaskCompletionSource<IRestResponse>();
-        theClient.ExecuteAsync(theRequest, response => {
-            tcs.SetResult(response);
-        });
-        return tcs.Task;
+        public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
+        {
+            var tcs = new TaskCompletionSource<IRestResponse>();
+            theClient.ExecuteAsync(theRequest, response =>
+            {
+                tcs.SetResult(response);
+            });
+            return tcs.Task;
+        }
     }
 }
