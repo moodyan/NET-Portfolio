@@ -1,2 +1,15 @@
-﻿body {
+﻿.uk-navbar-transparent {
+    height: 20vh;
+    background-image: url("../img/nav-banner2.jpg");
+    background-position: center;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    .a-tag {
+        color: white;
+        height: 20vh;
+    }
+}
+
+body {
+    height: 100vh;
 }
