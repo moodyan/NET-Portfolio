@@ -1,15 +1,34 @@
 ﻿.uk-navbar-transparent {
-    height: 20vh;
-    background-image: url("../img/nav-banner2.jpg");
+    height: 30vh;
+    background-image: url("../img/nav-banner6.png");
     background-position: center;
-    background-size: 100vh;
+    background-size: contain;
     background-repeat: no-repeat;
     .a-tag {
         color: white;
-        height: 20vh;
+        height: 30vh;
     }
 }
 
 body {
-    height: 100vh;
+    height: 99vh;
+    
+}
+
+.render-body {
+    margin-bottom: 10vh;
+}
+
+#personal {
+    min-height: 500px;
+    width: 93vw;
+    background-color: tomato;
+    margin-bottom: 30px;
+}
+
+#professional {
+    min-height: 500px;
+    width: 93vw;
+    background-color: #99ccff;
+    margin-bottom: 30px;
 }
