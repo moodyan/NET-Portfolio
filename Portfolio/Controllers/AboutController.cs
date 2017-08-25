@@ -6,9 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Portfolio.Controllers
 {
-    public class HomeController : Controller
+    public class AboutController : Controller
     {
         public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult AboutPersonal()
+        {
+            return View();
+        }
+        public IActionResult AboutProfessional()
         {
             return View();
         }

@@ -1,0 +1,9 @@
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\bin\Debug\netcoreapp1.1\Portfolio.deps.json
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\bin\Debug\netcoreapp1.1\Portfolio.runtimeconfig.json
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\bin\Debug\netcoreapp1.1\Portfolio.runtimeconfig.dev.json
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\bin\Debug\netcoreapp1.1\Portfolio.dll
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\bin\Debug\netcoreapp1.1\Portfolio.pdb
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\obj\Debug\netcoreapp1.1\Portfolio.csprojResolveAssemblyReference.cache
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\obj\Debug\netcoreapp1.1\Portfolio.AssemblyInfo.cs
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\obj\Debug\netcoreapp1.1\Portfolio.dll
+C:\Users\alyssamoody\Desktop\Portfolio\Portfolio\obj\Debug\netcoreapp1.1\Portfolio.pdb
