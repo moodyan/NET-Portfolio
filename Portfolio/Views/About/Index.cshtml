@@ -2,12 +2,41 @@
     ViewData["Title"] = "About";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>About</h2>
-<div id="personal">
 
-</div>
-<div id="professional">
 
+<div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
+    <div class="margins">
+        <div class="uk-tile uk-tile-one">
+            <div uk-lightbox>
+                <a class="uk-button uk-button-default" href="~/img/resume.pdf">RESUME</a>
+            </div>
+            @*<div class="tile-text">
+                <p class="uk-h4">Going into college in 2008 as an eighteen-year-old, I had no idea what I wanted to do with my life. I thought my life would be a linear path:</p>
+                <ol>
+                    <li>Graduate from high-school.</li>
+                    <li>College for four years - no more, no less.</li>
+                    <li>Get a good job that would support my passions outside of work.</li>
+                </ol>
+                <p class="uk-h4">However, after college, life threw me a few curve-balls and I realized just how non-linear life can be and how much more there is than an ordered list to check off.
+                </p>
+            </div>*@
+        </div>
+    </div>
+    <div class="margins">
+        <div class="uk-tile uk-tile-two">
+            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal">My Story</button>
+        </div>
+    </div>
+    <div class="margins">
+        <div class="uk-tile uk-tile-three">
+            <p class="uk-h4">Primary</p>
+        </div>
+    </div>
+    <div class="margins">
+        <div class="uk-tile uk-tile-four">
+            <p class="uk-h4">Secondary</p>
+        </div>
+    </div>
 </div>
 
 <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
@@ -46,5 +75,25 @@
             <h3 class="uk-card-title">Fade</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
+    </div>
+</div>
+
+<div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <h3>About Me</h3>
+
+        <p>Going into college in 2008 as an eighteen-year-old, I had no idea what I wanted to do with my life. I thought my life would be a linear path:</p>
+        <ol>
+            <li>Graduate from high-school.</li>
+            <li>College for four years - no more, no less.</li>
+            <li>Get a good job that would support my passions outside of work.</li>
+        </ol>
+        <p>However, after college, life threw me a few curve-balls and I realized just how non-linear life can be and how much more there is than an ordered list to check off.</p>
+        <p>Over the last five years, I have felt restless and unchallenged in my daily tasks at the various companies with whom I have resided. While I have always been a hard worker regarldless of the ease of task at hand, I felt my skills and abilities were not being utilized to their fullest potential.</p>
+        <p>I began to contemplate my aptitudes and what I've enjoyed doing in the past and what potential careers would potentially align with that. I love problem-solving and I am very analytical. My dad was a software developer for over 20 years and was that little bird whispering in my ear, telling me that development was the way to go. I finally decided to dive in, head first. And boy, am I glad I did.</p>
+
     </div>
 </div>

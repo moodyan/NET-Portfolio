@@ -1,22 +1,77 @@
 ﻿.uk-navbar-transparent {
-    height: 30vh;
-    background-image: url("../img/nav-banner6.png");
+    height: 25vh;
+    background-image: url("../img/nav-banner4.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     .a-tag {
         color: white;
-        height: 30vh;
+        height: 25vh;
     }
 }
 
-body {
+.profile {
+    width: 70%;
+}
+
+#project-header {
+    text-align: center;
+}
+.uk-card {
+    border: 7px dotted tomato;
+    margin: 5px;
+    text-align: center;
+    min-width: 350px;
+}
+
+.card-body {
+    height: 30vh;
+}
+
+.uk-card-footer {
+    height: 5vh;
+}
+
+.center {
+    text-align: center;
+}
+
+body, uk-container {
     height: 99vh;
-    
 }
 
 .render-body {
     margin-bottom: 10vh;
+}
+
+.uk-tile {
+    min-height: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    .tile-text {
+        color: white;
+        max-width: 500px;
+    }
+}
+
+.margins {
+    margin-bottom: 30px;
+
+}
+
+.uk-tile-one {
+    background-image: url("../img/blob2.png");
+}
+.uk-tile-two {
+    background-image: url("../img/blob5.png");
+}
+.uk-tile-three {
+    background-image: url("../img/blob4.png");
+}
+.uk-tile-four {
+    background-image: url("../img/blob3.png");
 }
 
 #personal {
@@ -24,6 +79,12 @@ body {
     width: 93vw;
     background-color: tomato;
     margin-bottom: 30px;
+
+    h2 {
+        color: white;
+        font-size: 50px;
+        padding: 20px;
+    }
 }
 
 #professional {

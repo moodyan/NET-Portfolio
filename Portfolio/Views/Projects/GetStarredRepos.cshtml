@@ -1,6 +1,21 @@
-﻿@foreach (var project in Model)
-{
-    <a href="@project.html_url">@project.name</a>
-    <p>@project.description</p>
-    <hr />
-}
+﻿    <div class="uk-flex uk-flex-center uk-flex-wrap">
+    @foreach (var project in Model)
+    {
+        <div class="uk-card uk-card-default uk-card-body uk-animation-toggle uk-animation-scale-up uk-width-1-3@m">
+            
+                <div class="card-body">
+                    <div class="uk-card-badge uk-label">@project.language</div>
+                    <br />
+                    <h3 class="uk-card-title uk-margin-remove-bottom">@project.name</h3>
+                    <div class="uk-card-body">
+                        <p>@project.description</p>
+                    </div>
+                </div>
+                <div class="uk-card-footer uk-flex-bottom">
+                    <a href="@project.html_url" class="uk-button uk-button-text">View GitHub Repo</a>
+                </div>
+            </div>
+        
+    }
+</div>
+    
