@@ -4,9 +4,15 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
     .a-tag {
         color: white;
         height: 25vh;
+    }
+
+    .a-tag:hover {
+        color: #F012BE;
+        text-shadow: 2px 2px 2px black;
     }
 }
 
@@ -36,23 +42,37 @@
     text-align: center;
 }
 
-body, uk-container {
+body {
     height: 99vh;
 }
+
+
 
 .render-body {
     margin-bottom: 10vh;
 }
 
 .uk-tile {
+    display: flex;
     min-height: 500px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
-    .tile-text {
+    justify-content: center;
+
+    a {
+        padding-top: 150px;
         color: white;
-        max-width: 500px;
+        text-shadow: 3px 3px 3px slategrey;
+        font-size: 40px;
+    }
+
+    a:hover {
+        text-decoration: none;
+        /*color: #F012BE;*/
+        color: #01FF70;
+        text-shadow: 3px 3px 2px white;
     }
 }
 
@@ -93,3 +113,4 @@ body, uk-container {
     background-color: #99ccff;
     margin-bottom: 30px;
 }
+

@@ -7,6 +7,9 @@
   .uk-navbar-transparent .a-tag {
     color: white;
     height: 25vh; }
+  .uk-navbar-transparent .a-tag:hover {
+    color: #F012BE;
+    text-shadow: 2px 2px 2px black; }
 
 .profile {
   width: 70%; }
@@ -29,21 +32,30 @@
 .center {
   text-align: center; }
 
-body, uk-container {
+body {
   height: 99vh; }
 
 .render-body {
   margin-bottom: 10vh; }
 
 .uk-tile {
+  display: flex;
   min-height: 500px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  text-align: center; }
-  .uk-tile .tile-text {
+  text-align: center;
+  justify-content: center; }
+  .uk-tile a {
+    padding-top: 150px;
     color: white;
-    max-width: 500px; }
+    text-shadow: 3px 3px 3px slategrey;
+    font-size: 40px; }
+  .uk-tile a:hover {
+    text-decoration: none;
+    /*color: #F012BE;*/
+    color: #01FF70;
+    text-shadow: 3px 3px 2px white; }
 
 .margins {
   margin-bottom: 30px; }
