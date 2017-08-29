@@ -11,7 +11,7 @@
     height: 25vh;
     font-size: 6vh; }
   .uk-navbar-transparent .a-tag:hover {
-    color: #FF1177;
+    color: white;
     text-shadow: 2px 2px 2px black; }
 
 .profile {
@@ -53,7 +53,6 @@
   #home-image img {
     height: 400px;
     border-radius: 10px;
-    /*border: 10px double #FF1177;*/
     box-shadow: 5px 5px 5px lightgrey;
     justify-content: center; }
 
@@ -62,12 +61,14 @@
   background-position: center;
   background-size: 50vw;
   background-repeat: no-repeat; }
+  #home-image:hover img {
+    box-shadow: 10px 10px 10px grey; }
 
 #project-header {
   text-align: center; }
 
 .uk-card {
-  border: 7px dotted tomato;
+  border: 7px dotted #FF1177;
   margin: 5px;
   text-align: center;
   min-width: 350px; }
@@ -77,6 +78,12 @@
 
 .uk-card-footer {
   height: 5vh; }
+
+.uk-button {
+  color: #FF1177; }
+
+.uk-button:hover {
+  color: #40E0D0; }
 
 .center {
   text-align: center; }
@@ -102,8 +109,7 @@ body {
     font-size: 40px; }
   .uk-tile a:hover {
     text-decoration: none;
-    /*color: #F012BE;*/
-    color: #01FF70;
+    color: #FF1177;
     text-shadow: 3px 3px 2px white; }
 
 .margins {
