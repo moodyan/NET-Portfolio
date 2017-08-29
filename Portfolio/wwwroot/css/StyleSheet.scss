@@ -1,17 +1,25 @@
 ﻿.uk-navbar-transparent {
     height: 25vh;
-    background-image: url("../img/nav-banner4.png");
+    background-image: url("../img/nav-banner.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 
+    .uk-navbar-nav {
+
+        .a-tag {
+            font-size: 4vh;
+        }
+    }
+
     .a-tag {
         color: white;
         height: 25vh;
+        font-size: 6vh;
     }
 
     .a-tag:hover {
-        color: #F012BE;
+        color: #FF1177;
         text-shadow: 2px 2px 2px black;
     }
 }
@@ -20,97 +28,169 @@
     width: 70%;
 }
 
-#project-header {
-    text-align: center;
-}
-.uk-card {
-    border: 7px dotted tomato;
-    margin: 5px;
-    text-align: center;
-    min-width: 350px;
-}
-
-.card-body {
-    height: 30vh;
-}
-
-.uk-card-footer {
-    height: 5vh;
-}
-
-.center {
-    text-align: center;
-}
-
-body {
-    height: 99vh;
-}
-
-
-
-.render-body {
-    margin-bottom: 10vh;
-}
-
-.uk-tile {
+#home-name {
     display: flex;
-    min-height: 500px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 49vw;
+    min-width: 300px;
+    padding-top: 50px;
+
+    p {
+        text-align: center;
+        font-size: 5em;
+        margin: 20px 0 20px 0;
+    }
 
     a {
-        padding-top: 150px;
-        color: white;
-        text-shadow: 3px 3px 3px slategrey;
-        font-size: 40px;
-    }
-
-    a:hover {
         text-decoration: none;
-        /*color: #F012BE;*/
-        color: #01FF70;
-        text-shadow: 3px 3px 2px white;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    p:nth-child(1) a {
+        color: #fff;
+        font-family: 'Monoton', cursive;
+        -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+        animation: neon1 1.5s ease-in-out infinite alternate;
+    }
+
+    p:nth-child(1) a:hover {
+        color: #FF1177;
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
     }
 }
 
-.margins {
-    margin-bottom: 30px;
+#home-image {
+    display: flex;
+    width: 49vw;
+    min-width: 500px;
+    padding-left: 50px;
+    padding-top: 30px;
 
+    img {
+        height: 400px;
+        border-radius: 10px;
+        /*border: 10px double #FF1177;*/
+        box-shadow: 5px 5px 5px lightgrey;
+        justify-content: center
+    }
+}
+#home-image:hover {
+    background-image: url("../img/splatter.jpg");
+    background-position: center;
+    background-size: 50vw;
+    background-repeat: no-repeat;
 }
 
-.uk-tile-one {
-    background-image: url("../img/blob2.png");
-}
-.uk-tile-two {
-    background-image: url("../img/blob5.png");
-}
-.uk-tile-three {
-    background-image: url("../img/blob4.png");
-}
-.uk-tile-four {
-    background-image: url("../img/blob3.png");
-}
+    #project-header {
+        text-align: center;
+    }
 
-#personal {
-    min-height: 500px;
-    width: 93vw;
-    background-color: tomato;
-    margin-bottom: 30px;
+    .uk-card {
+        border: 7px dotted tomato;
+        margin: 5px;
+        text-align: center;
+        min-width: 350px;
+    }
 
-    h2 {
-        color: white;
-        font-size: 50px;
-        padding: 20px;
+    .card-body {
+        height: 30vh;
+    }
+
+    .uk-card-footer {
+        height: 5vh;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    body {
+        height: 99vh;
+    }
+
+
+
+    .render-body {
+        margin-bottom: 10vh;
+    }
+
+    .uk-tile {
+        display: flex;
+        min-height: 500px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+        justify-content: center;
+
+        a {
+            padding-top: 150px;
+            color: white;
+            text-shadow: 3px 3px 3px slategrey;
+            font-size: 40px;
+        }
+
+        a:hover {
+            text-decoration: none;
+            /*color: #F012BE;*/
+            color: #01FF70;
+            text-shadow: 3px 3px 2px white;
+        }
+    }
+
+    .margins {
+        margin-bottom: 30px;
+    }
+
+    .uk-tile-one {
+        background-image: url("../img/blob2.png");
+    }
+
+    .uk-tile-two {
+        background-image: url("../img/blob5.png");
+    }
+
+    .uk-tile-three {
+        background-image: url("../img/blob4.png");
+    }
+
+    .uk-tile-four {
+        background-image: url("../img/blob3.png");
+    }
+
+   
+
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
     }
 }
 
-#professional {
-    min-height: 500px;
-    width: 93vw;
-    background-color: #99ccff;
-    margin-bottom: 30px;
+@-moz-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
 }
 
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
